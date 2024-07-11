@@ -1,0 +1,41 @@
+{
+    "source": "Card",
+    "amount": "{{AMOUNT}}",
+    "currency": "{{CURRENCY}}",
+    "language": "{{LANGUAGE}}",
+    "hooks": {
+      "webhookGateway": "{{hook_url}}",
+      "successRedirectGateway": "{{SUCCESS_URL}}",
+      "errorRedirectGateway": "{{FAIL_URL}}"
+    },
+    "metadata": {
+      "order": {
+        "orderId": "1",
+        "orderItems": [
+          {
+            "uzRegulatoryOrderItem": {
+              "commissionInfoTin": "ИНН компании"
+            },
+            "productName": "Название продукта",
+            "productCode": "ИКПУ код",
+            "packageCode": "",
+            "productQuantity": 2,
+            "price": 10,
+            "sumPrice": 20,
+            "vat": 0,
+            "vatPercent": 0
+          }
+        ],
+        "billingAddress": {
+          "phoneNumber": "Номер клиента"
+        }
+      },
+      "extraAttributes": [
+        {
+          "key": "RECEIPT_TYPE",
+          "value": "Sale",
+          "description": "OFD Receipt type"
+        }
+      ]
+    }
+  }

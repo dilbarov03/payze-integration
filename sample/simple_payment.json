@@ -1,0 +1,25 @@
+{
+    "source": "Card",
+    "amount": 10000,
+    "currency": "UZS",
+    "language": "UZ",
+    "hooks": {
+      "webhookGateway": "https://domain.com/",
+      "successRedirectGateway": "https://google.com",
+      "errorRedirectGateway": "https://yandex.com"
+    },
+    "metadata": {
+      "Order": {
+        "OrderId": "4",
+        "OrderItems": null,
+        "BillingAddress": null
+      },
+      "extraAttributes": [
+        {
+            "key": "RECEIPT_TYPE",
+            "value": "Sale",
+            "description": "OFD Receipt type"
+        }
+      ]
+    }
+  }
